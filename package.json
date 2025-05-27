@@ -1,0 +1,21 @@
+{
+  "name": "@vas-namespace/custom-exceptions",
+  "version": "1.0.0",
+  "description": "Knihovna vlastních výjimek s kódy a zprávami.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "exceptions",
+    "errors",
+    "custom"
+  ],
+  "author": "Vaše Jméno <pavel@tizek.cz>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vas-uzivatel/custom-exceptions-library.git"
+  }
+}
