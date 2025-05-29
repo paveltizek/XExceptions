@@ -3,7 +3,6 @@
 export const DATABASE_FAILED: string = 'XE-404';
 export const PERMISSION_DENIED: string = 'XE-400';
 export const ITEM_NOT_FOUND: string = 'XA-404'; // Tento může být použit např. s NotFoundError
-
 export const UNAUTHORIZED_ACCESS: string = 'XE-401';
 export const FORBIDDEN_RESOURCE: string = 'XE-403';
 export const INTERNAL_SERVER_ERROR: string = 'XE-500';
