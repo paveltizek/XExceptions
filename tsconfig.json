@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Cílová verze JavaScriptu (ES6/ES2015 je také dobrá volba pro širší kompatibilitu)
+    "module": "ESNext",  // Použijte "CommonJS" pokud váš projekt/prostředí vyžaduje CommonJS moduly
+    // Pro `type: "module"` v package.json je ESNext/ES2020 vhodnější
+    "lib": ["ES2020", "DOM"], // DOM pro případ, že by Error nebo něco jiného záviselo na DOM typech (obvykle ne pro backend)
+    "declaration": true,          // Generuje .d.ts soubory
+    "declarationMap": true,       // Generuje source mapy pro .d.ts soubory
+    "sourceMap": true,            // Generuje .js.map soubory
+    "outDir": "./dist",           // Výstupní adresář pro zkompilované soubory
+    "rootDir": "./src",           // Kořenový adresář se zdrojovými .ts soubory
+    "strict": true,               // Povolí všechny striktní typové kontroly
+    "esModuleInterop": true,      // Umožňuje `import x from 'module'` syntaxi pro moduly bez defaultního exportu
+    "skipLibCheck": true,         // Přeskočí typovou kontrolu deklaračních souborů v node_modules
+    "forceConsistentCasingInFileNames": true, // Zajistí konzistentní velikost písmen v názvech souborů
+    "moduleResolution": "node",   // Jak TypeScript hledá moduly
+    // "resolveJsonModule": true, // Pokud byste importovali JSON soubory
+  },
+  "include": ["src/**/*"], // Které soubory zahrnout do kompilace
+  "exclude": ["node_modules", "dist"] // Které soubory vyloučit
+}

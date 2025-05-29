@@ -1,21 +1,32 @@
 {
-  "name": "paveltizek/x-exceptions",
-  "version": "1.0.0",
-  "description": "Knihovna vlastních výjimek s kódy a zprávami.",
-  "main": "src/index.js",
+  "name": "@paveltizek/x-exceptions",
+  "version": "1.1.0",
+  "description": "Knihovna vlastních výjimek s kódy a zprávami, napsaná v TypeScriptu.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "exceptions",
     "errors",
-    "custom"
+    "custom",
+    "typescript"
   ],
   "author": "Pavel Tížek <pavel@tizek.cz>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paveltizek/XExceptions.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.51",
+    "typescript": "^5.8.3"
   }
 }
