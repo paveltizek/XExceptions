@@ -2,14 +2,17 @@
   "name": "@paveltizek/x-exceptions",
   "version": "1.1.0",
   "description": "Knihovna vlastních výjimek s kódy a zprávami, napsaná v TypeScriptu.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "type": "module",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run build"
   },
