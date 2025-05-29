@@ -1,6 +1,6 @@
-// src/BaseError.ts
+// src/EshopError.ts
 
-export class BaseError extends Error {
+export class EshopError extends Error {
     public readonly code: string;
     public readonly httpStatusCode: number;
     public readonly details: unknown;
